@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Firefox Tab Sorter",
+  "name": "Tab Sorter",
   "version": "1.0.0",
   "description": "Sort tabs by host or title from the tab menu, preserving pinned tabs and groups.",
   "permissions": ["tabs", "menus"],

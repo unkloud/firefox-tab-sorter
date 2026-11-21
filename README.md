@@ -1,4 +1,4 @@
-# Firefox Tab Sorter
+# Tab Sorter
 
 A small Firefox desktop extension that adds **Sort Tabs → By Host / By Title** to the menu shown when you right-click a tab. Requires Firefox 140 or newer. There is no toolbar button or settings page.
 
@@ -46,7 +46,7 @@ npm run build
 npm start
 ```
 
-`npm start` launches Firefox with a separate development profile and reloads the extension when its files change. `npm run build` packages only `extension/` into `dist/firefox_tab_sorter-1.0.0.zip`; tests and development dependencies are excluded. No compilation step or runtime dependencies are needed. Unit tests can also run without installing dependencies:
+`npm start` launches Firefox with a separate development profile and reloads the extension when its files change. `npm run build` packages only `extension/` into `dist/tab_sorter-1.0.0.zip`; tests and development dependencies are excluded. No compilation step or runtime dependencies are needed. Unit tests can also run without installing dependencies:
 
 ```sh
 node --test test/*.test.js
@@ -60,9 +60,9 @@ The implementation separates pure comparison/section planning (`extension/sortin
 
 The retained [compatibility report](compatibility/results.md) records each tested stable release from Firefox 140.0 through 160.0.1, including point releases. It identifies the exact extension and test-suite hashes. This is a Linux x86_64, en-US, headless browser matrix; ESR, beta, developer edition, nightly, Android, Windows and macOS are not included.
 
-All 63 pinned releases passed on 21 November 2026, using the packaged extension. Offline reruns passed on 140.0 and 149.0. The 32 extension unit tests and 10 matrix-runner regression tests also passed.
+All 63 pinned releases passed on 21 November 2026, using the initial packaged extension. That report predates the display-name correction to **Tab Sorter**; its recorded package hash identifies the tested build. The renamed package passed targeted browser checks on Firefox 140.0 and 160.0.1. Earlier offline reruns passed on 140.0 and 149.0. The 32 extension unit tests and 10 matrix-runner regression tests also passed.
 
-The automated smoke test needs Python 3 and an installed Firefox. Run `python3 scripts/firefox-smoke.py` (optionally `--firefox /path/to/firefox` or `--extension dist/firefox_tab_sorter-1.0.0.zip`). It starts a disposable headless profile and a loopback-only fixture server, invokes the actual tab context menu, and cleans up afterward. Browser UI access is enabled only for that test process; your normal Firefox profile is not used.
+The automated smoke test needs Python 3 and an installed Firefox. Run `python3 scripts/firefox-smoke.py` (optionally `--firefox /path/to/firefox` or `--extension dist/tab_sorter-1.0.0.zip`). It starts a disposable headless profile and a loopback-only fixture server, invokes the actual tab context menu, and cleans up afterward. Browser UI access is enabled only for that test process; your normal Firefox profile is not used.
 
 ### Run the release matrix locally
 
@@ -71,7 +71,7 @@ Requirements: Linux x86_64, Python 3.12+, `curl`, and Firefox's usual system lib
 ```sh
 npm run build
 npm run test:compat:unit
-npm run test:compat -- --extension dist/firefox_tab_sorter-1.0.0.zip --jobs 3
+npm run test:compat -- --extension dist/tab_sorter-1.0.0.zip --jobs 3
 ```
 
 The version list is pinned in `compatibility/releases.json`. The runner writes `compatibility/results.json` and a readable `compatibility/results.md` after each completed release. It exits nonzero if a requested release fails or has no build for this platform. Detailed per-version results, harness output, and Firefox logs remain in `compatibility/logs/`. Browser downloads and logs are excluded from Git; the suite, version list, and complete report are retained in Git.
@@ -82,10 +82,10 @@ Useful reruns:
 
 ```sh
 # Rerun every version from cached downloads, without network access.
-npm run test:compat -- --extension dist/firefox_tab_sorter-1.0.0.zip --offline
+npm run test:compat -- --extension dist/tab_sorter-1.0.0.zip --offline
 
 # Retry an interrupted run; reuse passes only for the same extension and suite.
-npm run test:compat -- --extension dist/firefox_tab_sorter-1.0.0.zip --resume
+npm run test:compat -- --extension dist/tab_sorter-1.0.0.zip --resume
 
 # Test a subset; its default report goes under logs/ to preserve the full report.
 npm run test:compat -- --versions 140.0,149.0,160.0.1 --offline
