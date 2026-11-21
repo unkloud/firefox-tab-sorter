@@ -2,6 +2,11 @@
   "name": "firefox-tab-sorter",
   "version": "1.0.0",
   "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unkloud/firefox-tab-sorter.git"
+  },
   "description": "Sort Firefox tabs by host or page title from the tab context menu.",
   "type": "module",
   "engines": {

@@ -37,6 +37,8 @@ The manifest declares that no data is collected. Private windows work only if yo
 Install Node.js 22 or newer with npm, then run:
 
 ```sh
+git clone https://github.com/unkloud/firefox-tab-sorter.git
+cd firefox-tab-sorter
 npm ci
 npm test
 npm run lint
@@ -106,4 +108,8 @@ Use a separate Firefox profile with two windows. Open tabs with mixed hosts/titl
 
 ## Repository
 
-This directory is a standalone Git repository with its own history. It is locally excluded from the parent `Tools` repository, and has no remote configured.
+Source, tests, and compatibility results are available at [unkloud/firefox-tab-sorter](https://github.com/unkloud/firefox-tab-sorter). Browser downloads, detailed test logs, build artifacts, and development dependencies are excluded from Git.
+
+## License
+
+[MIT](LICENSE) — copyright (c) 2026 unkloud.
