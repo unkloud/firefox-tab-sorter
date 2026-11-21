@@ -56,9 +56,45 @@ The implementation separates pure comparison/section planning (`extension/sortin
 
 ## Browser checks
 
-Validated on Firefox 160.0.1: both native menu commands, natural title ordering, sorting within groups and gaps, fixed pinned/hidden/split-view tabs, active tab and container preservation, a second untouched window, and repeated-sort idempotence. The smoke test passed for both the source directory and the packaged ZIP. All 32 unit tests pass; source and ZIP validation report zero errors and the Android-only warning described above.
+The retained [compatibility report](compatibility/results.md) records each tested stable release from Firefox 140.0 through 160.0.1, including point releases. It identifies the exact extension and test-suite hashes. This is a Linux x86_64, en-US, headless browser matrix; ESR, beta, developer edition, nightly, Android, Windows and macOS are not included.
+
+All 63 pinned releases passed on 21 November 2026, using the packaged extension. Offline reruns passed on 140.0 and 149.0. The 32 extension unit tests and 10 matrix-runner regression tests also passed.
 
 The automated smoke test needs Python 3 and an installed Firefox. Run `python3 scripts/firefox-smoke.py` (optionally `--firefox /path/to/firefox` or `--extension dist/firefox_tab_sorter-1.0.0.zip`). It starts a disposable headless profile and a loopback-only fixture server, invokes the actual tab context menu, and cleans up afterward. Browser UI access is enabled only for that test process; your normal Firefox profile is not used.
+
+### Run the release matrix locally
+
+Requirements: Linux x86_64, Python 3.12+, `curl`, and Firefox's usual system libraries. The first complete run downloads several GB from Mozilla's official archive. Every browser archive is checked against Mozilla's SHA-512 checksum before extraction. Browsers are cached in `.firefox-cache/`, with automatic updates disabled; each test uses a new temporary profile.
+
+```sh
+npm run build
+npm run test:compat:unit
+npm run test:compat -- --extension dist/firefox_tab_sorter-1.0.0.zip --jobs 3
+```
+
+The version list is pinned in `compatibility/releases.json`. The runner writes `compatibility/results.json` and a readable `compatibility/results.md` after each completed release. It exits nonzero if a requested release fails or has no build for this platform. Detailed per-version results, harness output, and Firefox logs remain in `compatibility/logs/`. Browser downloads and logs are excluded from Git; the suite, version list, and complete report are retained in Git.
+
+Both native menu commands, title/host ordering, groups and ungrouped gaps, pinned and hidden boundaries, active tabs, containers, a second window, and repeat-sort idempotence are tested on every version. Split-view preservation is additionally tested from Firefox 149, when the extension API exposes split-view membership. Earlier releases explicitly report that one check as unavailable; their core tests must still pass. Each test also verifies that Firefox is running the exact requested version.
+
+Useful reruns:
+
+```sh
+# Rerun every version from cached downloads, without network access.
+npm run test:compat -- --extension dist/firefox_tab_sorter-1.0.0.zip --offline
+
+# Retry an interrupted run; reuse passes only for the same extension and suite.
+npm run test:compat -- --extension dist/firefox_tab_sorter-1.0.0.zip --resume
+
+# Test a subset; its default report goes under logs/ to preserve the full report.
+npm run test:compat -- --versions 140.0,149.0,160.0.1 --offline
+
+# Explicitly refresh the stable version list from Mozilla, then exit.
+npm run test:compat -- --discover --minimum 140.0 --maximum 160.0.1
+```
+
+Omitting `--extension` tests the source `extension/` directory. Use the same ZIP when resuming a package run; source and ZIP hashes are deliberately different. Removing `.firefox-cache/` frees the browser downloads, and the next online run recreates them. Node tests remain available through `npm test`; the Python matrix regression tests cover release discovery, checksum validation, archive extraction, offline handling, resume rules, and incomplete reporting.
+
+### Additional manual scenarios
 
 Use a separate Firefox profile with two windows. Open tabs with mixed hosts/titles, duplicate titles, numeric titles, and internal pages. Add pinned tabs, groups, hidden tabs where available, and a split view where supported. Run both context-menu commands and check:
 

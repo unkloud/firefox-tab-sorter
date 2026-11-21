@@ -5,6 +5,7 @@ Python standard library only; never connects to the user's Firefox profile.
 """
 
 import argparse
+import hashlib
 import html
 import http.server
 import json
@@ -19,6 +20,18 @@ import time
 import urllib.parse
 
 ROOT = Path(__file__).resolve().parent.parent
+
+
+def extension_digest(path):
+    """Hash the exact package, or all relative filenames and bytes for a source tree."""
+    digest = hashlib.sha256()
+    if path.is_file():
+        digest.update(path.read_bytes())
+    else:
+        for file in sorted(item for item in path.rglob("*") if item.is_file()):
+            digest.update(file.relative_to(path).as_posix().encode() + b"\0")
+            digest.update(file.read_bytes())
+    return digest.hexdigest()
 
 
 class PageHandler(http.server.BaseHTTPRequestHandler):
@@ -69,9 +82,17 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--firefox", default=shutil.which("firefox"))
     parser.add_argument("--extension", type=Path, default=ROOT / "extension")
+    parser.add_argument("--expect-version", help="Fail if the browser runs a different version")
+    parser.add_argument("--report", type=Path, help="Save a machine-readable result, including failures")
+    parser.add_argument("--browser-log", type=Path, help="Retain Firefox's diagnostic log")
     args = parser.parse_args()
     if not args.firefox:
         parser.error("Firefox was not found; specify --firefox /path/to/firefox")
+    result_record = {
+        "ok": False,
+        "expected_version": args.expect_version,
+        "extension_sha256": extension_digest(args.extension.resolve()),
+    }
 
     with socket.socket() as reservation:
         reservation.bind(("127.0.0.1", 0))
@@ -96,6 +117,11 @@ def main():
                 "datareporting.policy.dataSubmissionEnabled": False,
                 "toolkit.telemetry.reportingpolicy.firstRun": False,
                 "extensions.update.enabled": False,
+                "app.update.auto": False,
+                "app.update.disabledForTesting": True,
+                "browser.sessionstore.resume_from_crash": False,
+                "browser.tabs.warnOnClose": False,
+                "network.proxy.type": 0,
             }
             (profile / "user.js").write_text("\n".join(
                 f"user_pref({json.dumps(key)}, {json.dumps(value)});"
@@ -122,7 +148,11 @@ def main():
                     if client is None:
                         raise TimeoutError("Firefox did not start Marionette within 30 seconds")
                     session = client.command("WebDriver:NewSession", {"capabilities": {"alwaysMatch": {}}})
-                    print("Firefox:", session["capabilities"]["browserVersion"], "(disposable headless profile)", flush=True)
+                    actual_version = session["capabilities"]["browserVersion"]
+                    result_record["browser_version"] = actual_version
+                    print("Firefox:", actual_version, "(disposable headless profile)", flush=True)
+                    if args.expect_version and actual_version != args.expect_version:
+                        raise AssertionError(f"Expected {args.expect_version}, got {actual_version}")
                     print("Installed:", client.command("Addon:Install", {
                         "path": str(args.extension.resolve()), "temporary": True,
                     }), flush=True)
@@ -134,15 +164,19 @@ def main():
                     })
                     print(json.dumps(result, indent=2), flush=True)
                     value = result.get("value", result)
+                    result_record.update(value)
                     if not value.get("ok"):
                         raise AssertionError("Firefox smoke test failed")
-                except Exception:
+                except Exception as error:
+                    result_record["ok"] = False
+                    result_record.setdefault("error", str(error))
                     log.flush()
                     log.seek(0)
                     print(log.read()[-10000:], flush=True)
                     raise
                 finally:
                     if client:
+                        client.stream.close()
                         client.connection.close()
                     process.terminate()
                     try:
@@ -150,9 +184,16 @@ def main():
                     except subprocess.TimeoutExpired:
                         process.kill()
                         process.wait(timeout=5)
+                    if args.browser_log:
+                        args.browser_log.parent.mkdir(parents=True, exist_ok=True)
+                        log.flush()
+                        shutil.copyfile(log.name, args.browser_log)
     finally:
         server.shutdown()
         server.server_close()
+        if args.report:
+            args.report.parent.mkdir(parents=True, exist_ok=True)
+            args.report.write_text(json.dumps(result_record, indent=2) + "\n")
 
 
 if __name__ == "__main__":

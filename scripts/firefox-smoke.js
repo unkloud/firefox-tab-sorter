@@ -4,6 +4,9 @@ const done = arguments[arguments.length - 1];
 (async () => {
   const win = Services.wm.getMostRecentWindow("navigator:browser");
   const g = win.gBrowser;
+  const major = Number.parseInt(Services.appinfo.version, 10);
+  const hasSplitViews = major >= 149;
+  const skipped = hasSplitViews ? [] : ["Split-view preservation: WebExtensions splitViewId is available from Firefox 149"];
   const check = (condition, message) => { if (!condition) throw new Error(message); };
   const pause = ms => new Promise(resolve => win.setTimeout(resolve, ms));
   const waitFor = async (predicate, message) => {
@@ -30,22 +33,23 @@ const done = arguments[arguments.length - 1];
   const gapZ = createTab("Gap Z", "a.localhost");
   const gapA = createTab("Gap A", "z.localhost");
   const hidden = createTab("Hidden");
-  const splitZ = createTab("Split Z");
-  const splitA = createTab("Split A");
+  const splitZ = hasSplitViews ? createTab("Split Z") : null;
+  const splitA = hasSplitViews ? createTab("Split A") : null;
   const tailZ = createTab("Tail Z", "a.localhost");
   const tailA = createTab("Tail A", "z.localhost");
-  const fixtures = [pinned, z, a, groupZ, groupA, gapZ, gapA, hidden, splitZ, splitA, tailZ, tailA];
+  const fixtures = [pinned, z, a, groupZ, groupA, gapZ, gapA, hidden, splitZ, splitA, tailZ, tailA].filter(Boolean);
   g.selectedTab = z;
   for (const tab of original) g.removeTab(tab);
   await waitFor(() => fixtures.every(tab => tab.label === tab.getAttribute("smoke-title")), "Fixture pages did not load");
   g.pinTab(pinned);
   const group = g.addTabGroup([groupZ, groupA], { label: "Smoke group", color: "blue", insertBefore: gapZ });
   g.hideTab(hidden);
-  const split = g.addTabSplitView([splitZ, splitA], { insertBefore: tailZ });
+  const split = hasSplitViews ? g.addTabSplitView([splitZ, splitA], { insertBefore: tailZ }) : null;
   g.selectedTab = z;
   const ids = () => [...g.tabs].map(tab => tab.getAttribute("smoke-title"));
-  const expectedTitle = ["Pinned", "Page 2", "Page 10", "Group A", "Group Z", "Gap A", "Gap Z", "Hidden", "Split Z", "Split A", "Tail A", "Tail Z"];
-  const expectedHost = ["Pinned", "Page 10", "Page 2", "Group Z", "Group A", "Gap Z", "Gap A", "Hidden", "Split Z", "Split A", "Tail Z", "Tail A"];
+  const splitTitles = hasSplitViews ? ["Split Z", "Split A"] : [];
+  const expectedTitle = ["Pinned", "Page 2", "Page 10", "Group A", "Group Z", "Gap A", "Gap Z", "Hidden", ...splitTitles, "Tail A", "Tail Z"];
+  const expectedHost = ["Pinned", "Page 10", "Page 2", "Group Z", "Group A", "Gap Z", "Gap A", "Hidden", ...splitTitles, "Tail Z", "Tail A"];
   const initialGroup = group.id;
   const selected = g.selectedTab;
   const container = z.userContextId;
@@ -78,8 +82,11 @@ const done = arguments[arguments.length - 1];
   check(z.userContextId === container, "Container changed");
   check(group.id === initialGroup && groupA.group === group && groupZ.group === group, "Group membership changed");
   check(pinned.pinned && [...g.tabs].indexOf(hidden) === 7 && hidden.hidden, "Pinned/hidden tabs changed");
-  check(splitZ.splitview === split && splitA.splitview === split && split.tabs[0] === splitZ, "Split view changed");
-  checks.push("Active tab, container, pinned tab, hidden boundary, split view and group membership preserved");
+  if (hasSplitViews) {
+    check(splitZ.splitview === split && splitA.splitview === split && split.tabs[0] === splitZ, "Split view changed");
+    checks.push("Split view preserved");
+  }
+  checks.push("Active tab, container, pinned tab, hidden boundary and group membership preserved");
 
   await invokeMenu("By Host");
   await waitFor(() => JSON.stringify(ids()) === JSON.stringify(expectedHost), () => `Host order wrong: ${JSON.stringify(ids())}`);
@@ -95,7 +102,7 @@ const done = arguments[arguments.length - 1];
   check([...other.gBrowser.tabs].every((tab, index) => tab === otherSnapshot[index]) && other.gBrowser.tabs.length === otherSnapshot.length, "Other window changed");
   checks.push("Second window untouched");
   other.close();
-  return { ok: true, checks, order: ids() };
+  return { ok: true, checks, skipped, order: ids() };
 })().then(done, error => done({
   ok: false, error: String(error), stack: error.stack,
   console: Services.console.getMessageArray().map(item => item.message)

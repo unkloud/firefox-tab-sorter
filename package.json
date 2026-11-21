@@ -9,6 +9,9 @@
   },
   "scripts": {
     "test": "node --test test/*.test.js",
+    "test:compat:unit": "python3 -m unittest discover -s test -p 'test_*.py'",
+    "test:firefox": "python3 scripts/firefox-smoke.py",
+    "test:compat": "python3 scripts/firefox-matrix.py",
     "lint": "web-ext lint --source-dir extension",
     "build": "web-ext build --source-dir extension --artifacts-dir dist --overwrite-dest",
     "start": "web-ext run --source-dir extension"

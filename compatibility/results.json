@@ -1,0 +1,2126 @@
+{
+  "started_at": "2026-11-21T07:05:34.812326+00:00",
+  "platform": "linux-x86_64/en-US",
+  "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+  "suite_sha256": "5939af4df44234e2a48f130947daff94310630bcb5723c4bd039630c01bf7bd9",
+  "requested_versions": [
+    "140.0",
+    "140.0.1",
+    "140.0.2",
+    "140.0.4",
+    "141.0",
+    "141.0.2",
+    "141.0.3",
+    "142.0",
+    "142.0.1",
+    "143.0",
+    "143.0.1",
+    "143.0.3",
+    "143.0.4",
+    "144.0",
+    "144.0.2",
+    "145.0",
+    "145.0.1",
+    "145.0.2",
+    "146.0",
+    "146.0.1",
+    "147.0",
+    "147.0.1",
+    "147.0.2",
+    "147.0.3",
+    "147.0.4",
+    "148.0",
+    "148.0.2",
+    "149.0",
+    "149.0.2",
+    "150.0",
+    "150.0.1",
+    "150.0.2",
+    "150.0.3",
+    "151.0",
+    "151.0.1",
+    "151.0.2",
+    "151.0.3",
+    "151.0.4",
+    "152.0",
+    "152.0.1",
+    "152.0.2",
+    "152.0.3",
+    "152.0.4",
+    "152.0.5",
+    "152.0.6",
+    "153.0",
+    "153.0.1",
+    "153.0.3",
+    "153.0.4",
+    "154.0",
+    "154.0.1",
+    "155.0",
+    "155.0.1",
+    "156.0",
+    "156.0.1",
+    "157.0",
+    "157.0.1",
+    "158.0",
+    "158.0.1",
+    "159.0",
+    "159.0.1",
+    "160.0",
+    "160.0.1"
+  ],
+  "results": [
+    {
+      "version": "140.0",
+      "status": "pass",
+      "archive_sha512": "481bb473c1c8279626e25d7253ee1735ca42e6898a5a664b21f1189d2779c2ecb555536eb46bcb2ac88066c286e831e17b23b877d7cd2d3b650083198c6dedc6",
+      "ok": true,
+      "expected_version": "140.0",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "140.0",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [
+        "Split-view preservation: WebExtensions splitViewId is available from Firefox 149"
+      ],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 3.02
+    },
+    {
+      "version": "140.0.1",
+      "status": "pass",
+      "archive_sha512": "17c8318761c9b897a333b4d341b905a6ee484e6138449dc7e717e08c3edb9b729c604ac0141a942bae4650287c0429d662b2eeca48afee101d4ee627bb8db84e",
+      "ok": true,
+      "expected_version": "140.0.1",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "140.0.1",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [
+        "Split-view preservation: WebExtensions splitViewId is available from Firefox 149"
+      ],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 12.53
+    },
+    {
+      "version": "140.0.2",
+      "status": "pass",
+      "archive_sha512": "d4687e9727c80c051b89dca2e341a0a0ec6b3f86407005f777f944ef48133dfeec86dd393689a7648d14929dcad8b521f02f545cb02e66469aa06d9d92598f2d",
+      "ok": true,
+      "expected_version": "140.0.2",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "140.0.2",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [
+        "Split-view preservation: WebExtensions splitViewId is available from Firefox 149"
+      ],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 11.73
+    },
+    {
+      "version": "140.0.4",
+      "status": "pass",
+      "archive_sha512": "910259f234bca1b43956c51e89e2c9bcc60eb937040bc3d2f777d389e07b2b27b69bc04aa21451b15dc726da15d00afceaa71d310f520cc5aac0eace1024c4a1",
+      "ok": true,
+      "expected_version": "140.0.4",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "140.0.4",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [
+        "Split-view preservation: WebExtensions splitViewId is available from Firefox 149"
+      ],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 10.63
+    },
+    {
+      "version": "141.0",
+      "status": "pass",
+      "archive_sha512": "21198756d0360053ff8389cd7cf11da785f01d07d85bde156bedee19fb5704db629a7f68220d59893a1f6d01c1796879f55af04caedb61bee05e9607077414aa",
+      "ok": true,
+      "expected_version": "141.0",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "141.0",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [
+        "Split-view preservation: WebExtensions splitViewId is available from Firefox 149"
+      ],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 9.75
+    },
+    {
+      "version": "141.0.2",
+      "status": "pass",
+      "archive_sha512": "dc79dad8a7da4208a53c9f809dfdcf0a4aac9497f580e233301bbd4ada50fa65bfa4b3cdd9b7bf7f33d8a06478b6d33cdfc5db22e1a3b4297e73b0762366fbd1",
+      "ok": true,
+      "expected_version": "141.0.2",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "141.0.2",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [
+        "Split-view preservation: WebExtensions splitViewId is available from Firefox 149"
+      ],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 12.41
+    },
+    {
+      "version": "141.0.3",
+      "status": "pass",
+      "archive_sha512": "87a06fbba41389c8d68c04a0ca205963fa5fc0552bf5e1f2bffedea4dbf381b116b4ebe920573b90e0de543c1b4b758f38cfc5e9921974b37316fa957b3e825b",
+      "ok": true,
+      "expected_version": "141.0.3",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "141.0.3",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [
+        "Split-view preservation: WebExtensions splitViewId is available from Firefox 149"
+      ],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 9.54
+    },
+    {
+      "version": "142.0",
+      "status": "pass",
+      "archive_sha512": "5e9600e35a25aad842fc6da0e9f62d6eb83abb57df11e892f430ecca33f9de95a7193d9eede7f51ff02082a2128040d1da13b867d441257b11b3a4edf93069c0",
+      "ok": true,
+      "expected_version": "142.0",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "142.0",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [
+        "Split-view preservation: WebExtensions splitViewId is available from Firefox 149"
+      ],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 9.19
+    },
+    {
+      "version": "142.0.1",
+      "status": "pass",
+      "archive_sha512": "6b67e71a0f162589a1faa67bf139eeba0672ae3addf6e24ee282a8f796272ca6e361b13350573a17f56d52b5120c72aa2c580312567a395e03f5d5e36eeca2f7",
+      "ok": true,
+      "expected_version": "142.0.1",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "142.0.1",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [
+        "Split-view preservation: WebExtensions splitViewId is available from Firefox 149"
+      ],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 10.51
+    },
+    {
+      "version": "143.0",
+      "status": "pass",
+      "archive_sha512": "86df91a7571881627ac1a3987dc3151da1dc99b93b6c40b627cb165c3444d1839fc64ad5b4d71297c7c70bbf1724307b61df6e1b655b701041be92b3fcad38d7",
+      "ok": true,
+      "expected_version": "143.0",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "143.0",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [
+        "Split-view preservation: WebExtensions splitViewId is available from Firefox 149"
+      ],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 9.76
+    },
+    {
+      "version": "143.0.1",
+      "status": "pass",
+      "archive_sha512": "2a8133768f10ba502abb8f69f04885ab3cda0ebf6de02f6adc70787b200cb25b9cb080cd9bc43090ee112236341ba5f6cb8ed1595dab70ab24dbd5535be9e0d0",
+      "ok": true,
+      "expected_version": "143.0.1",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "143.0.1",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [
+        "Split-view preservation: WebExtensions splitViewId is available from Firefox 149"
+      ],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 10.35
+    },
+    {
+      "version": "143.0.3",
+      "status": "pass",
+      "archive_sha512": "99205643d52270eec62dc769727cabc6dcf6172bf8a1fbf233c6bde0a1fedfef83fa2586fd696ee5d32b8aa7e47a1af71bec854f85cebd974337d604dabb9b59",
+      "ok": true,
+      "expected_version": "143.0.3",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "143.0.3",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [
+        "Split-view preservation: WebExtensions splitViewId is available from Firefox 149"
+      ],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 10.49
+    },
+    {
+      "version": "143.0.4",
+      "status": "pass",
+      "archive_sha512": "8f504eea91dc51e97712c9698b6ff62963904a5c0de0dfeb7fc0a675f352f0f4bbe90e258727760e7e0e8a122606c1ce7821e79766edf2a7295147f1306ac826",
+      "ok": true,
+      "expected_version": "143.0.4",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "143.0.4",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [
+        "Split-view preservation: WebExtensions splitViewId is available from Firefox 149"
+      ],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 10.91
+    },
+    {
+      "version": "144.0",
+      "status": "pass",
+      "archive_sha512": "90fe610e3a84bdb4ee767cd8dc320624189eda82f7578a8fc612ec749035f505204a9afe140915540e5012e0efc5aa084963e900c1d1e6c3a072791e92dab209",
+      "ok": true,
+      "expected_version": "144.0",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "144.0",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [
+        "Split-view preservation: WebExtensions splitViewId is available from Firefox 149"
+      ],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 10.26
+    },
+    {
+      "version": "144.0.2",
+      "status": "pass",
+      "archive_sha512": "22d16f03eec7f259f87edb4a4ddf59414e55bc923b274390a94cfc25368f96c0d37e916394201a65b09753efecaf7fe21925ba04a9df23410b8f4492ab93cfcf",
+      "ok": true,
+      "expected_version": "144.0.2",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "144.0.2",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [
+        "Split-view preservation: WebExtensions splitViewId is available from Firefox 149"
+      ],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 10.37
+    },
+    {
+      "version": "145.0",
+      "status": "pass",
+      "archive_sha512": "ed320e50d8eef8af85cd231c967579c069968e915380626d049dbf76b3c9b4550c2067aa9535137358561cf3eb5a7ce42c373b6d551d65e51e02b0adff6ac428",
+      "ok": true,
+      "expected_version": "145.0",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "145.0",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [
+        "Split-view preservation: WebExtensions splitViewId is available from Firefox 149"
+      ],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 9.43
+    },
+    {
+      "version": "145.0.1",
+      "status": "pass",
+      "archive_sha512": "f347d6529d78c75d926c4407bab052768da14faf31430cb2ff1e5626963011a84192afef1c039519050861b2fd28d34ca4a9f8e2a67676109a5ef115e395ce8c",
+      "ok": true,
+      "expected_version": "145.0.1",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "145.0.1",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [
+        "Split-view preservation: WebExtensions splitViewId is available from Firefox 149"
+      ],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 9.83
+    },
+    {
+      "version": "145.0.2",
+      "status": "pass",
+      "archive_sha512": "ca1e90d3c1fc8bb9bb12c932ed8a5f8b2e144cac367a8e7165a063e530d96f708de82bd6fa8aa6227917edf7baa243a988cb706ea7cfe9a6a9d7422eaa6700d5",
+      "ok": true,
+      "expected_version": "145.0.2",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "145.0.2",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [
+        "Split-view preservation: WebExtensions splitViewId is available from Firefox 149"
+      ],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 10.17
+    },
+    {
+      "version": "146.0",
+      "status": "pass",
+      "archive_sha512": "e5320c356e0ad7b24b7be4bfec89c7c3ad70f5977b30f9364f034d2217e02dd7d51bef2776a2205cc5125798bf3567ec8bc53515957118e48263a3d8fa2d3cad",
+      "ok": true,
+      "expected_version": "146.0",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "146.0",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [
+        "Split-view preservation: WebExtensions splitViewId is available from Firefox 149"
+      ],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 10.15
+    },
+    {
+      "version": "146.0.1",
+      "status": "pass",
+      "archive_sha512": "a8bf7577d4320ac38442c880af4b15dd90a11b09ac14080703258ce6916fcf73514fc6d91383bf9a4133cf1cd796762a84f718f80313ed0fdcd23cfa50629aaa",
+      "ok": true,
+      "expected_version": "146.0.1",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "146.0.1",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [
+        "Split-view preservation: WebExtensions splitViewId is available from Firefox 149"
+      ],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 10.74
+    },
+    {
+      "version": "147.0",
+      "status": "pass",
+      "archive_sha512": "7c4ba0481e5f590bb9b07d8157b3b1ea8f09e2d961468c5a6a466d10fadb08cb8eac4602b359f915dcfba48283f0f0b0c827d98ae3318aa831ab6d418821c5e2",
+      "ok": true,
+      "expected_version": "147.0",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "147.0",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [
+        "Split-view preservation: WebExtensions splitViewId is available from Firefox 149"
+      ],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 9.92
+    },
+    {
+      "version": "147.0.1",
+      "status": "pass",
+      "archive_sha512": "95e24ad83cf7b2cf8b4a243d4d9245a8e96c8ceb827a32a1ee6de1781dabbf8a3eb14c483f5c05926cf12d489b51bbad650ed99c561c72424bf743362da3ebb7",
+      "ok": true,
+      "expected_version": "147.0.1",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "147.0.1",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [
+        "Split-view preservation: WebExtensions splitViewId is available from Firefox 149"
+      ],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 11.26
+    },
+    {
+      "version": "147.0.2",
+      "status": "pass",
+      "archive_sha512": "b3124bd2cc651c267c9eaa87ffc17ccebfe304cb6bb1225838390391f0457bd2fe725f2b82892e5fa372c27a83a711b8ab30cc4336f8b9d8e3f6dc2998a2d3bb",
+      "ok": true,
+      "expected_version": "147.0.2",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "147.0.2",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [
+        "Split-view preservation: WebExtensions splitViewId is available from Firefox 149"
+      ],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 10.17
+    },
+    {
+      "version": "147.0.3",
+      "status": "pass",
+      "archive_sha512": "d91f0debc360e1557d641d5f0bdc041a7127fc9eff5e166c956762d52bfab9865ec4a024bd62cd092709da9075d88ea5d18f5104706ce4054482dae3f6b734dc",
+      "ok": true,
+      "expected_version": "147.0.3",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "147.0.3",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [
+        "Split-view preservation: WebExtensions splitViewId is available from Firefox 149"
+      ],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 10.22
+    },
+    {
+      "version": "147.0.4",
+      "status": "pass",
+      "archive_sha512": "073e470578d9bf3927532a58b36c0fca509942cf1ed35a82f728e0a50963211a9929d4b8c9a7fb9548b6fad61c93257a25f388181a2cfedec47567bad6d59893",
+      "ok": true,
+      "expected_version": "147.0.4",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "147.0.4",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [
+        "Split-view preservation: WebExtensions splitViewId is available from Firefox 149"
+      ],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 13.31
+    },
+    {
+      "version": "148.0",
+      "status": "pass",
+      "archive_sha512": "4580c0dc4f627ab15ba11521414b5fc02b66521d537572190178d24213ad5ab2323159c19b2a84873cff7377f595c93d89087ff726586582a18e520c9cfe8bde",
+      "ok": true,
+      "expected_version": "148.0",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "148.0",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [
+        "Split-view preservation: WebExtensions splitViewId is available from Firefox 149"
+      ],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 10.94
+    },
+    {
+      "version": "148.0.2",
+      "status": "pass",
+      "archive_sha512": "eb7687e5c085123a15e1191ecaf90069393811d6aaa23ac81a115742f9bf5782c2d49f7ec9c70d5f788c0491d18f53ff07549d280ef51bf370ae941a75feea14",
+      "ok": true,
+      "expected_version": "148.0.2",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "148.0.2",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [
+        "Split-view preservation: WebExtensions splitViewId is available from Firefox 149"
+      ],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 24.46
+    },
+    {
+      "version": "149.0",
+      "status": "pass",
+      "archive_sha512": "931408a10615f6701ab21ba634dd4edf27df8e492defd7c076a56a7dda51c197fe8e4b034b8347326c30fa7cf604c833eeffc7565d0a8867fa116586c4a953cf",
+      "ok": true,
+      "expected_version": "149.0",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "149.0",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 2.75
+    },
+    {
+      "version": "149.0.2",
+      "status": "pass",
+      "archive_sha512": "76a32f30cba68fab88aa0918035e61639c9b2595a9ae89aff6b986fa424f1a931cfa8f57b206d1114fb23f9b1c840c9f6a3b70edde4f94aaba9dbc73ae94d530",
+      "ok": true,
+      "expected_version": "149.0.2",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "149.0.2",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 11.07
+    },
+    {
+      "version": "150.0",
+      "status": "pass",
+      "archive_sha512": "c5ecbdbcc9845d7193271f58ac5314d83e3d3803d637839d6093d4b6f90ffc393a8c4ed88397e196b58b17472f160a48b284e0512dfad86508291393f45580fe",
+      "ok": true,
+      "expected_version": "150.0",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "150.0",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 9.54
+    },
+    {
+      "version": "150.0.1",
+      "status": "pass",
+      "archive_sha512": "a2d9b68b4cb54134513c07a298fc1d5bff4af77b6fd6b2984d455422b2c577d36602b8a37e2432416c63f9fcd24ba859131be6fb567aabef5084d9a6f3fb8fc5",
+      "ok": true,
+      "expected_version": "150.0.1",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "150.0.1",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 11.33
+    },
+    {
+      "version": "150.0.2",
+      "status": "pass",
+      "archive_sha512": "673123c1fd0540fe18424189b4fd4975a8f1011a000056263a90e7350a700764ad86321db7a2b224c6fbaa8c46d80b030f7532f62df237440ad3745d9d867f8a",
+      "ok": true,
+      "expected_version": "150.0.2",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "150.0.2",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 10.95
+    },
+    {
+      "version": "150.0.3",
+      "status": "pass",
+      "archive_sha512": "ee0b8c85a81c49ad314d80f2f5b0ebaf1a5c9aca1cadb7308203de6ccd04214d3aa18d9a5511f0ec2a4447b3c277dfc278377f9b50ee745d6106c1d0c9ff5b6a",
+      "ok": true,
+      "expected_version": "150.0.3",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "150.0.3",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 11.01
+    },
+    {
+      "version": "151.0",
+      "status": "pass",
+      "archive_sha512": "adeacfbc56b555c3e8a04f220e22f4a1a2dd9e223795dc81a4f25ffd4096be5cceee63d6870dbaa6b0f7327c96428d17b703bbfa55882a266580a6b62c43d382",
+      "ok": true,
+      "expected_version": "151.0",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "151.0",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 11.65
+    },
+    {
+      "version": "151.0.1",
+      "status": "pass",
+      "archive_sha512": "fb71de30f233a783f251494cdf1dd3d51df022f815d8e723356caa65f01e898dda7c3ac4bc5f646d6020a28de8a1564142f7f0b1112047de5e95169d657e7895",
+      "ok": true,
+      "expected_version": "151.0.1",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "151.0.1",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 11.46
+    },
+    {
+      "version": "151.0.2",
+      "status": "pass",
+      "archive_sha512": "e423fffe8b6fb9d0f5e9c8804e4dca5c2d709e8c4c998bd42eaf949a0f4c42a2c1679e9d6c8ba0b171354023b68cba9fefcea7269352bd3ea7b28d8e1dc792fd",
+      "ok": true,
+      "expected_version": "151.0.2",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "151.0.2",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 10.33
+    },
+    {
+      "version": "151.0.3",
+      "status": "pass",
+      "archive_sha512": "3e8ffc0a6390e4ae59e3fcbc98535a2022dced28ea973cb079e855125929744e85d6f93a0bf5d0cbf7f4e45a66bc56ab8ca9adcf88ecb2dd045700e311b39318",
+      "ok": true,
+      "expected_version": "151.0.3",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "151.0.3",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 10.95
+    },
+    {
+      "version": "151.0.4",
+      "status": "pass",
+      "archive_sha512": "93484253a3c5a790aead7c53ddf3fcde1becc8e259a5bb8da3810c577b03e0e4583de7de5eea5e7963aba5831b796ffdf176fb481d027e63f5e3846267799a9b",
+      "ok": true,
+      "expected_version": "151.0.4",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "151.0.4",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 11.45
+    },
+    {
+      "version": "152.0",
+      "status": "pass",
+      "archive_sha512": "c247f8edf0df5cf2bc181c2d3474d4eff5310489134d8b1f4ab4f263f1972143c6a08b3c118f8413857ed653c5ab3345f124e43b4500504b2b43058afd7fa159",
+      "ok": true,
+      "expected_version": "152.0",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "152.0",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 8.72
+    },
+    {
+      "version": "152.0.1",
+      "status": "pass",
+      "archive_sha512": "7905a4d76112107c38d1a5ea0f8479b5da1837121bbf26a3487ec8897de259994386a0d32216c6666e6e92e6338277e4f0fd32fca505cbed53a0f2f28aed4baa",
+      "ok": true,
+      "expected_version": "152.0.1",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "152.0.1",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 11.14
+    },
+    {
+      "version": "152.0.2",
+      "status": "pass",
+      "archive_sha512": "b99449d7549abdc99905229b65de7e7441a4bf7346a4c3fe117b51ab77ed62699710aa64339019bc1b7245285a2a13d060cdeccdc2b21bf94fb71aaf972f4571",
+      "ok": true,
+      "expected_version": "152.0.2",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "152.0.2",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 16.74
+    },
+    {
+      "version": "152.0.3",
+      "status": "pass",
+      "archive_sha512": "def2fd4dca58ce3323f59fd37845370b7ec0cfe5c98fd79c377d4130a05af8b5e9478d46df3e5acdd20e6fb3a95212d65b3e8bb63e28ce4835f886c68d9d5888",
+      "ok": true,
+      "expected_version": "152.0.3",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "152.0.3",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 13.7
+    },
+    {
+      "version": "152.0.4",
+      "status": "pass",
+      "archive_sha512": "814c55362eb1b8e6d9668cbf75740eaf0270495053ef5d2e43d94b81502cacbf2d2f08eab45561265a99354d3e30fdbdb8c1d9579336a0f0ecfa4719720a4110",
+      "ok": true,
+      "expected_version": "152.0.4",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "152.0.4",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 12.03
+    },
+    {
+      "version": "152.0.5",
+      "status": "pass",
+      "archive_sha512": "7c006e291d9a414a4abeed196654f1b513610bd7de1d7dbcd7688313c537d832b856ab239687583d2caf01026c490ffb4ce05f85f468a291b4a2598a813dba42",
+      "ok": true,
+      "expected_version": "152.0.5",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "152.0.5",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 13.31
+    },
+    {
+      "version": "152.0.6",
+      "status": "pass",
+      "archive_sha512": "414b060f5e28e1b9c8818dee51896a81bd273c6cf6a4cffa53c4d7214f2c1d26d0416b9088518294435a7ead014a320a8deb910e93f3345ab6fbbbe596b4a336",
+      "ok": true,
+      "expected_version": "152.0.6",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "152.0.6",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 10.59
+    },
+    {
+      "version": "153.0",
+      "status": "pass",
+      "archive_sha512": "2058a88bea97a3a52780023b794d389f4f914ada8c3a053e62b92a72972b9003de34cc783dd9e15cae37b93c6fc39845295395e968547f5503fd45dee079bfdd",
+      "ok": true,
+      "expected_version": "153.0",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "153.0",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 10.07
+    },
+    {
+      "version": "153.0.1",
+      "status": "pass",
+      "archive_sha512": "85b5eac9447f2e1bb6c44eaeaadd9f87b60203fc59763119abdfab952134ba33debf48ea46f1a111334bb168b6c305acdd5faab1a4ba12d606b67f119968bb74",
+      "ok": true,
+      "expected_version": "153.0.1",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "153.0.1",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 11.14
+    },
+    {
+      "version": "153.0.3",
+      "status": "pass",
+      "archive_sha512": "4ac76c35ad6750bc599febce87bbbdf773c6e00448bcdc35f854c02d8b8308a9ef730eba9c69b4ecac5e90ba69059a45c6840ba8aa7fe6672359e00b3d52bfcd",
+      "ok": true,
+      "expected_version": "153.0.3",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "153.0.3",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 11.97
+    },
+    {
+      "version": "153.0.4",
+      "status": "pass",
+      "archive_sha512": "3ead23fa5b941df5c94930ef1cf1ff73a3452ec281585f3fa68e73fc77b873869935b27c6c72bf0c2d08f2bc8fd3cc91861c25130c6d0df400a5b0330cfdc2be",
+      "ok": true,
+      "expected_version": "153.0.4",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "153.0.4",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 11.24
+    },
+    {
+      "version": "154.0",
+      "status": "pass",
+      "archive_sha512": "0e57c27d947a78f88b5d9d3407e67b67316a41b82f747cddcee15f71f5e80691fc9be488f98e8bb6cca183739f953e2e09dc5429ec030fbe4b8060886dafdf62",
+      "ok": true,
+      "expected_version": "154.0",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "154.0",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 10.94
+    },
+    {
+      "version": "154.0.1",
+      "status": "pass",
+      "archive_sha512": "d99d886ccdbab4cb975ff8faa3f978bfea5926b28bb50d14700557f12503e1a2a300242d6346d8ce0662a5e841a52f55dd7007080576e8a31d2a51f477674d72",
+      "ok": true,
+      "expected_version": "154.0.1",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "154.0.1",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 11.71
+    },
+    {
+      "version": "155.0",
+      "status": "pass",
+      "archive_sha512": "796896d2c8a4ae1260378e8a48c526a4e0f88f32599bcc83af1147a974d26e5cbc9eb0d9bfe392fffd9b14d54007f51f1ec514b5d9db396975babb38e5e07022",
+      "ok": true,
+      "expected_version": "155.0",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "155.0",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 13.3
+    },
+    {
+      "version": "155.0.1",
+      "status": "pass",
+      "archive_sha512": "da23025495aa3a2b154cff7c6464fa8bc31ca0c683b378c34b9dced9f33b6e657537c0b5fc44e98bce742bda8e3c58a0a571d1ccd849bf41031881cd36dfba1b",
+      "ok": true,
+      "expected_version": "155.0.1",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "155.0.1",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 11.46
+    },
+    {
+      "version": "156.0",
+      "status": "pass",
+      "archive_sha512": "0d412c90b4ec2a0b0690790a864a17e32187a32ecb2a616fea49b8b9f193f4225ea220e476cf220fc362d5322bee5e9f515a3b2d52e224c9ac659980942465b9",
+      "ok": true,
+      "expected_version": "156.0",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "156.0",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 12.49
+    },
+    {
+      "version": "156.0.1",
+      "status": "pass",
+      "archive_sha512": "7f5894d1c97a7b9be73abd5c6b25c76eaba4a154b3bbb46b59f1f05ce80790a514772c72d30b8924d6d6b95dcebc12c188b2fc47de74fc050788dbfbdad56875",
+      "ok": true,
+      "expected_version": "156.0.1",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "156.0.1",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 14.02
+    },
+    {
+      "version": "157.0",
+      "status": "pass",
+      "archive_sha512": "80bea033c8c7b90d7d2b4a2abe4dff91f65a4548d9f34da5e055413e1d709ba55fc0ded78dc48bbc275c3ecb0417670f7c1ae7cd7ee554bbe066605e6762bd7e",
+      "ok": true,
+      "expected_version": "157.0",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "157.0",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 11.65
+    },
+    {
+      "version": "157.0.1",
+      "status": "pass",
+      "archive_sha512": "ebec5e5c91a7c954a0f276928748bb4249e2b44bccdcfe6c7d7b4ed9c64ca6891a56cc8a016546bfbf1ca537dfe6084dba8f2746037c62fae0acc13a542421f3",
+      "ok": true,
+      "expected_version": "157.0.1",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "157.0.1",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 10.62
+    },
+    {
+      "version": "158.0",
+      "status": "pass",
+      "archive_sha512": "da90b8c7c6f391935508f99a54d730e5141044c0ce0e915900ecb3f208e840f10a4cf8d38d76852335e6c436bbe2a16e1bf72945fe067340ad94d9ae98f41c59",
+      "ok": true,
+      "expected_version": "158.0",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "158.0",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 11.65
+    },
+    {
+      "version": "158.0.1",
+      "status": "pass",
+      "archive_sha512": "f15f8b281c4ead2ef35d0b56c59a0ead825521d7243d16f3e7c36f0c2732101ae1f564e044a7aad1e04c310f70064611d13434fb24d052a662356ce068d7d3ec",
+      "ok": true,
+      "expected_version": "158.0.1",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "158.0.1",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 10.17
+    },
+    {
+      "version": "159.0",
+      "status": "pass",
+      "archive_sha512": "d81bb0b4334cd3e1add28102c8cad149d80a5441f96389a469f48d6268d53a8b2cf8582f1de946a44c9c088c526adbd006e1a8be1ac188ca43dfd15ae2d684c0",
+      "ok": true,
+      "expected_version": "159.0",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "159.0",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 8.83
+    },
+    {
+      "version": "159.0.1",
+      "status": "pass",
+      "archive_sha512": "76ed0cce9d298e1a4450e497947a40a2ad9d11a4ced1bb6c823f02d5f8a30d891ff63e7f6c1bde6f127cf4bc02ec8c9342a90c00c8b0d6bc633845d3fdbec623",
+      "ok": true,
+      "expected_version": "159.0.1",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "159.0.1",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 10.82
+    },
+    {
+      "version": "160.0",
+      "status": "pass",
+      "archive_sha512": "e9c7ed0d4abc6eb3648c2c5652bd325e690423ef49414ef201eac59c0932ea8ec52260cf652510b2c98971c7e7eb36e6be8101d87cae17c6dd28ed763bac32a6",
+      "ok": true,
+      "expected_version": "160.0",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "160.0",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 10.12
+    },
+    {
+      "version": "160.0.1",
+      "status": "pass",
+      "archive_sha512": "516fdef2706a48e2d6bf93f4ae8c5ed6b1445dff1c5fed3ed652761b0d13bbe1170cde77fafacc68eb4965d27effa87e59486db5b1cee6039f566eb820bde0a6",
+      "ok": true,
+      "expected_version": "160.0.1",
+      "extension_sha256": "c37aa0b803147e4bd0284c8775c59e514ea18f5690408475a64fea984066d46d",
+      "browser_version": "160.0.1",
+      "checks": [
+        "Native By Title menu: natural sorting, groups and ungrouped gaps",
+        "Split view preserved",
+        "Active tab, container, pinned tab, hidden boundary and group membership preserved",
+        "Native By Host menu: hostname sorting in each section",
+        "Repeated sort is a no-op",
+        "Second window untouched"
+      ],
+      "skipped": [],
+      "order": [
+        "Pinned",
+        "Page 10",
+        "Page 2",
+        "Group Z",
+        "Group A",
+        "Gap Z",
+        "Gap A",
+        "Hidden",
+        "Split Z",
+        "Split A",
+        "Tail Z",
+        "Tail A"
+      ],
+      "seconds": 3.33
+    }
+  ],
+  "complete": true
+}
