@@ -1,0 +1,19 @@
+{
+  "name": "firefox-tab-sorter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sort Firefox tabs by host or page title from the tab context menu.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "lint": "web-ext lint --source-dir extension",
+    "build": "web-ext build --source-dir extension --artifacts-dir dist --overwrite-dest",
+    "start": "web-ext run --source-dir extension"
+  },
+  "devDependencies": {
+    "web-ext": "10.8.0"
+  }
+}

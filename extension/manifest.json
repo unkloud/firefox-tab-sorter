@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Firefox Tab Sorter",
+  "version": "1.0.0",
+  "description": "Sort tabs by host or title from the tab menu, preserving pinned tabs and groups.",
+  "permissions": ["tabs", "menus"],
+  "background": {
+    "scripts": ["background.js"],
+    "type": "module"
+  },
+  "icons": {
+    "48": "icons/sort-tabs.svg",
+    "96": "icons/sort-tabs.svg"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "firefox-tab-sorter@local.extensions",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": { "required": ["none"] }
+    }
+  }
+}
