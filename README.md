@@ -2,6 +2,38 @@
 
 A small Firefox desktop extension that adds **Sort Tabs → By Host / By Title** to the menu shown when you right-click a tab. Requires Firefox 140 or newer. There is no toolbar button or settings page.
 
+## Build instructions for Mozilla reviewers
+
+This source submission is for **Tab Sorter 1.0.0** (`tab_sorter-1.0.0.zip`). All shipped source files are in `extension/`. The add-on contains original, readable JavaScript, JSON, and SVG. There is no transpilation, concatenation, minification, or build-time code generation, and there are no third-party runtime libraries. The only build operation is to package the files without changing their bytes.
+
+### Build environment and prerequisites
+
+- **Operating system:** Linux. The reviewer build was verified on Linux x86_64 with Python 3.12.3. Packaging uses only the Python standard library, with no CPU-specific compilation or tools.
+- **Required program:** Python **3.12 or newer**. On Ubuntu 24.04, install the distribution's Python 3.12 with `sudo apt-get update` followed by `sudo apt-get install python3`. Check the version using `python3 --version`.
+- **Node.js, npm, web-ext, Git, and Firefox are not needed to rebuild this source submission.** They are used only by the optional development and browser-testing workflows documented below. The original uploaded ZIP was packaged with web-ext 10.8.0; the reviewer script reproduces the same extension file contents using Python.
+- **Network access:** None after Python is installed and this source ZIP is extracted. Do not run `npm ci` or download the browser compatibility matrix to rebuild the add-on.
+
+### Step-by-step build
+
+1. Extract the source ZIP to a directory, then open a terminal in that directory (the directory containing this README, `extension/`, and `scripts/`).
+2. Run `python3 --version` and confirm version 3.12 or newer.
+3. Run the complete build script:
+
+   ```sh
+   python3 scripts/build-reviewer.py
+   ```
+
+4. Find the rebuilt add-on at `dist/tab_sorter-1.0.0-rebuilt.zip`.
+5. To verify it against the submitted **unsigned extension ZIP**, run:
+
+   ```sh
+   python3 scripts/build-reviewer.py --compare /path/to/tab_sorter-1.0.0.zip
+   ```
+
+The comparison checks the complete set of files and every byte in each file, including the manifest and icon. It fails if any file is missing, added, or changed. ZIP compression, timestamps, and directory-only entries may differ from the original web-ext archive; the unpacked add-on code and resources are identical. The Python-built ZIP itself has fixed metadata and is reproducible. Compare against the unsigned upload, because Mozilla adds signing files afterward.
+
+Only `extension/` is included in the installable add-on. This source submission also includes the build script, tests, development package/lock files, license, and documentation; these are not shipped as runtime extension files. The standard npm build remains available in the Development section for maintainers.
+
 ## Install temporarily
 
 1. Open `about:debugging#/runtime/this-firefox` in Firefox.
